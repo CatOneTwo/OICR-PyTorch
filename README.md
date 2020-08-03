@@ -118,13 +118,13 @@ To **Visualize** the detection results:
 
 After evaluating OICR on test dataset, you will get `detections.pkl`.  Then you can run the visualization script to show the results in a openCV window.
 ```shell
-python3 code/tasks/visualize.py --cfg configs/baselines/vgg16_voc2007.yaml --dataset voc2007test --detections snapshots/midn_oicr/<some-running-date-time>/test/final/detections.pkl 
+python3 code/tasks/visualize.py --cfg configs/baselines/vgg16_voc2007.yaml --dataset voc2007test --detections snapshots/midn_oicr/<some-running-date-time>/test/model_step24999/detections.pkl 
 ```
 You can also save the visualizations as images. First create a folder to save the outputs and pass it with the --output argument
 
 ```shell
 mkdir output    
-python3 code/tasks/visualize.py --cfg configs/baselines/vgg16_voc2007.yaml --dataset voc2007test --detections snapshots/midn_oicr/<some-running-date-time>/test/final/detections.pkl --output output 
+python3 code/tasks/visualize.py --cfg configs/baselines/vgg16_voc2007.yaml --dataset voc2007test --detections snapshots/midn_oicr/<some-running-date-time>/test/model_step24999/detections.pkl --output output 
 ```
 
 ---
