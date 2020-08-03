@@ -146,7 +146,7 @@ Below is the code structure
     - **VOCdevikit**: VOC dataset
 
 All code files are in `code` directory. If you want to design a model based on OICR, you can modify `layers` and `model`.
-## Reference
+## References
 - [Boosted-OICR](https://github.com/luiszeni/Boosted-OICR)
 - [OICR](https://github.com/ppengtang/oicr)
 
