@@ -100,11 +100,11 @@ git clone https://github.com/CatOneTwo/OICR-PyTorch
     tar xvf pretrained_model.tar
     ```
 ## Usage
-To **Train** the WSDDN network on VOC 2007 trainval set:
+To **Train** the OICR network on VOC 2007 trainval set:
 ```shell
 python3 code/tasks/train.py --cfg configs/baselines/vgg16_voc2007.yaml --model midn_oicr
 ```
-To **Evaluate** the WSDDN network on VOC 2007:
+To **Evaluate** the OICR network on VOC 2007:
 
 On trainval (corloc)
 ```shell
@@ -114,9 +114,9 @@ On test (detection mAP)
 ```shell
 python3 code/tasks/test.py --cfg configs/baselines/vgg16_voc2007.yaml  --dataset voc2007test --model midn_oicr --load_ckpt snapshots/midn_oicr/<some-running-date-time>/ckpt/model_step24999.pth
 ```
-To **Visualize** the detection results
+To **Visualize** the detection results:
 
-After evaluating WSDDN on test dataset, you will get `detections.pkl`.  Then you can run the visualization script to show the results in a openCV window.
+After evaluating OICR on test dataset, you will get `detections.pkl`.  Then you can run the visualization script to show the results in a openCV window.
 ```shell
 python3 code/tasks/visualize.py --cfg configs/baselines/vgg16_voc2007.yaml --dataset voc2007test --detections snapshots/midn_oicr/<some-running-date-time>/test/final/detections.pkl 
 ```
@@ -135,7 +135,7 @@ Below is the code structure
 - **code**
     - **datasets**: VOC dataset file
     - **layers**: layer and loss files
-    - **models**: WSDDN model based on layers
+    - **models**: OICR model based on layers
     - **tasks**: train, test and visualize files
     - **utils**: files used for other directories
 - **configs**
