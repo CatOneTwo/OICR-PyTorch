@@ -1,18 +1,24 @@
 # OICR-PyTorch
 This repository contains the PyTorch implementation of paper [`Multiple Instance Detection Network with Online Instance Classifier Refinement`](https://arxiv.org/abs/1704.00138) (CVPR 2017)
 
+Related code: [WSDDN PyTorch](https://github.com/CatOneTwo/WSDDN-PyTorch)
+
 ## Architecture
 ![OICR](https://raw.githubusercontent.com/CatOneTwo/Picbed_PicGo/master/img/OICR.png)
 
 ## Results
 
+VOC2007 test
+
 |        | aero | bike | bird | boat | bottle | bus  | car  | cat  | chair | cow  | table | dog  | horse | mbike | person | plant | sheep | sofa | train | tv   | mAP  |
 | ------ | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- | ----- | ---- | ----- | ---- | ----- | ----- | ------ | ----- | ----- | ---- | ----- | ---- | ---- |
-| **Ap** |      |      |      |      |        |      |      |      |       |      |       |      |       |       |        |       |       |      |       |      |      |
+| **Ap** | 61.1 | 67.9 | 42.8 | 13.0 | 12.5   | 67.2 | 66.7 | 38.5 | 20.3  | 49.5 | 35.3  | 28.5 | 33.8  | 67.4  | 5.7    | 20.5  | 41.7  | 42.6 | 62.1  | 67.3 | 42.2 |
+
+VOC2007 trainval
 
 |            | aero | bike | bird | boat | bottle | bus  | car  | cat  | chair | cow  | table | dog  | horse | mbike | person | plant | sheep | sofa | train | tv   | mean     |
 | ---------- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- | ----- | ---- | ----- | ---- | ----- | ----- | ------ | ----- | ----- | ---- | ----- | ---- | -------- |
-| **corLoc** | 80.4 | 82.7 | 67.3 | 42.6 | 41.2   | 80.2 | 85.5 | 51.5 | 42.7  | 78.8 | 43.3  | 40.5 | 52.0  | 88.4  | 15.7   | 57.1  | 81.4  | 53.2 | 74.1  | 82.8 | **62.1** |
+| **CorLoc** | 80.4 | 82.7 | 67.3 | 42.6 | 41.2   | 80.2 | 85.5 | 51.5 | 42.7  | 78.8 | 43.3  | 40.5 | 52.0  | 88.4  | 15.7   | 57.1  | 81.4  | 53.2 | 74.1  | 82.8 | **62.1** |
 
 ## Contents
 
@@ -26,7 +32,7 @@ This repository contains the PyTorch implementation of paper [`Multiple Instance
 
 
 ## Requirements: software
-Python3 packages and versions used (listed using freeze frin pip) are in requirements.txt.
+**Python3 packages** and versions used (listed using freeze frin pip) are in requirements.txt.
 
 You can create a new virtual environment and then install thses packages from requirements.txt.
 ```shell
@@ -34,8 +40,15 @@ conda create -n env_name python=3.6
 pip install -r $OICR_ROOT/requirements.txt
 ```
 You can also install these packages by yourself.
+
+Besides, you should install **Octave**, which is mostly compatible with MATLAB.
+
+```shell
+sudo apt-get install octave
+```
+
 ## Requirements: hardware
-- We used cuda 9.0 and cudnn 7.0
+- We used cuda 9.0 and cudnn 7.0 on Ubuntu 16.04
     - We used an Nvidia GeForce GTX with 10.9G of memory. But it shold be ok to train if you have a GPU with at least 8Gb.
     - **NOTICE**: different versions of Pytorch have different memory usages.
 
