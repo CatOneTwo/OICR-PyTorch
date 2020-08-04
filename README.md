@@ -4,7 +4,18 @@ This repository contains the PyTorch implementation of paper [`Multiple Instance
 ## Architecture
 ![OICR](https://raw.githubusercontent.com/CatOneTwo/Picbed_PicGo/master/img/OICR.png)
 
+## Results
+
+|        | aero | bike | bird | boat | bottle | bus  | car  | cat  | chair | cow  | table | dog  | horse | mbike | person | plant | sheep | sofa | train | tv   | mAP  |
+| ------ | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- | ----- | ---- | ----- | ---- | ----- | ----- | ------ | ----- | ----- | ---- | ----- | ---- | ---- |
+| **Ap** |      |      |      |      |        |      |      |      |       |      |       |      |       |       |        |       |       |      |       |      |      |
+
+|            | aero | bike | bird | boat | bottle | bus  | car  | cat  | chair | cow  | table | dog  | horse | mbike | person | plant | sheep | sofa | train | tv   | mean     |
+| ---------- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- | ----- | ---- | ----- | ---- | ----- | ----- | ------ | ----- | ----- | ---- | ----- | ---- | -------- |
+| **corLoc** | 80.4 | 82.7 | 67.3 | 42.6 | 41.2   | 80.2 | 85.5 | 51.5 | 42.7  | 78.8 | 43.3  | 40.5 | 52.0  | 88.4  | 15.7   | 57.1  | 81.4  | 53.2 | 74.1  | 82.8 | **62.1** |
+
 ## Contents
+
 1. [Requirements: software](#requirements-software)
 2. [Requirements: hardware](#requirements-hardware)
 3. [Basic installation](#basic-installation)
