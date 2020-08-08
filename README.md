@@ -155,7 +155,7 @@ python3 code/tasks/visualize.py --cfg configs/baselines/vgg16_voc2007.yaml --dat
 
 You can download my model by baidu netdisk:
 
-Link: https://pan.baidu.com/s/1pEpmh4AYgPxW5hVBkJ7Kfw  Code: zcn5
+Link: https://pan.baidu.com/s/1BMrqbVe6uCsOgsu5rMm3mg Code: icyb 
 
 Put this folder in your $OICR_ROOT, then test and visualize model.
 
