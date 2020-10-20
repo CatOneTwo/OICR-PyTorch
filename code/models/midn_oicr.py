@@ -119,7 +119,7 @@ class DetectionModel(nn.Module):
                     final_scores += refine_score[i]
 
                 # final_scores += distillation_score
-                final_scores /= cfg.REFINE_TIMES + 1
+                final_scores /= cfg.REFINE_TIMES
 
                 if cfg.DEDUP_BOXES > 0:
                     # Map scores and predictions back to the original set of boxes
