@@ -20,7 +20,7 @@ pycocotools==2.0.1
 pycparser==2.18
 pyparsing==2.2.0
 python-dateutil==2.6.1
-PyYAML==5.1
+PyYAML==5.4
 scikit-learn==0.23.1
 scipy==1.4.1
 six==1.10.0
