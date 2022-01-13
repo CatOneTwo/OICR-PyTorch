@@ -14,7 +14,7 @@ mkl-service==2.3.0
 numpy==1.18.5
 olefile==0.44
 packaging==16.8
-Pillow==7.1.0
+Pillow==9.0.0
 protobuf==3.12.3
 pycocotools==2.0.1
 pycparser==2.18
